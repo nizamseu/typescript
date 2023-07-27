@@ -1,0 +1,1 @@
+var courseName = "name Nizam";
