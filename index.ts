@@ -18,4 +18,3 @@ const newDeveloper: NextLevelDeveloper = {
   leaderShipExperience: 10,
   level: "mid",
 };
-console.log(newDeveloper);
