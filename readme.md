@@ -29,4 +29,4 @@ age: number;
 
 ## Can you give an example of how to use generics in TypeScript?
 
-For generic Type we use Angular Brackets (<>).inside the bracket we define the type.Normaly Developer use _T_ for Single Parameter .if there is more than one Parameter then Developer use _T_, _X_, _Y_.
+For generic Type we use Angular Brackets (<>).inside the bracket we define the type.Normaly Developer use **T** for Single Parameter .if there is more than one Parameter then Developer use **T**, **X** , **Y** .
