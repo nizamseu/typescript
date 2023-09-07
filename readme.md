@@ -27,6 +27,29 @@ age: number;
 ```js
 ````
 
-## Can you give an example of how to use generics in TypeScript?
+## Q 3: Can you give an example of how to use generics in TypeScript?
 
 For generic Type we use Angular Brackets (<>).inside the bracket we define the type.Normaly Developer use **T** for Single Parameter .if there is more than one Parameter then Developer use **T**, **X** , **Y** .
+
+```js
+function getFirstElement<T>(arr: T[]): T | undefined {
+  if (arr.length === 0) {
+    return undefined;
+  }
+  return arr[0];
+}
+
+// Example usage:
+
+const numbers: number[] = [1, 2, 3, 4, 5];
+const firstNumber: number | undefined = getFirstElement(numbers);
+console.log(firstNumber); // Output: 1
+
+const strings: string[] = ["apple", "banana", "cherry"];
+const firstString: string | undefined = getFirstElement(strings);
+console.log(firstString); // Output: "apple"
+
+const emptyArray: number[] = [];
+const firstEmpty: number | undefined = getFirstElement(emptyArray);
+console.log(firstEmpty); // Output: undefined
+```
