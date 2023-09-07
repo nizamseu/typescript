@@ -1,31 +1,32 @@
+## Q 1; What is TypeScript, and how is it different from JavaScript?
+
 TypeScript is a programming language that builds on JavaScript . It is often referred to as a "superset" of JavaScript. TypeScript is the valid JavaScript code, but TypeScript have some additional features and syntax for checking type .
 
-There are some key differences between JavaScript and TypeScript.
+#### There are some key differences between JavaScript and TypeScript.
 
-1.Interfaces and Custom Types
-2.Static Typing
-3.Type Annotations and Inference:
+**1.Interfaces and Custom Types**
+**2.Static Typing**
+**3.Type Annotations and Inference.**
 
 ## Q2 :Can you explain the difference between "interface" and "type" in TypeScript?
 
 Type Alias and interface both are almost simillar and some times we can choose both of them. Almost all the feature of an interface are available in type alias. Most of the time we use interface for object. but we can also use type alis for object
 
-````js
+```js
 //type Alis >
 
 type User = {
-name: string;
-age: number;
+  name: string,
+  age: number,
 };
 
 // interface >
 
 interface IUser {
-name: string;
-age: number;
+  name: string;
+  age: number;
 }
-```js
-````
+```
 
 ## Q 3: Can you give an example of how to use generics in TypeScript?
 
@@ -85,3 +86,7 @@ if (selectedColor === Color.Green) {
 }
 
 ```
+
+## Q 4:What is the "as" keyword used for in TypeScript?
+
+in typescript we used **as** keyword for explicitly type cast a value to a different type
