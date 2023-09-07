@@ -53,3 +53,35 @@ const emptyArray: number[] = [];
 const firstEmpty: number | undefined = getFirstElement(emptyArray);
 console.log(firstEmpty); // Output: undefined
 ```
+
+## Q5: Can you give an example of how to use enums in TypeScript?
+
+there are some example of **enum**
+
+```js
+enum Color {
+  Red,       // this is 0
+  Green,     // this is 1
+  Blue,      // this is 2
+  Yellow,    // this is 3
+}
+
+enum Direction {
+  Up = "UP",
+  Down = "DOWN",
+  Left = "LEFT",
+  Right = "RIGHT",
+}
+
+// Using of them
+let selectedColor: Color = Color.Red;
+let currentDirection: Direction = Direction.Right;
+
+//used in conditionals
+if (selectedColor === Color.Green) {
+  console.log("Selected color is green");
+} else {
+  console.log("Selected color is not green");
+}
+
+```
